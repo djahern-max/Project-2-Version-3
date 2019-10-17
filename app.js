@@ -5,7 +5,9 @@ const pageRouter = require('./routes/pages');
 const app = express();
 
 // for body parser. to collect data that sent from the client.
-app.use(express.urlencoded( { extended : false}));
+app.use(express.urlencoded({
+    extended: false
+}));
 
 
 // Serve static files. CSS, Images, JS files ... etc
@@ -18,7 +20,7 @@ app.set('view engine', 'pug');
 
 // session
 app.use(session({
-    secret:'youtube_video',
+    secret: 'mythendium_app',
     resave: false,
     saveUninitialized: false,
     cookie: {
@@ -32,7 +34,7 @@ app.use('/', pageRouter);
 
 
 // Errors => page not found 404
-app.use((req, res, next) =>  {
+app.use((req, res, next) => {
     var err = new Error('Page not found');
     err.status = 404;
     next(err);

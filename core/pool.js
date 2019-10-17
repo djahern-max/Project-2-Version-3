@@ -1,14 +1,13 @@
 const util = require('util');
 const mysql = require('mysql');
-/**
- * Connection to the database.
- *  */
+require("dotenv").config();
+
 const pool = mysql.createPool({
     connectionLimit: 10,
     host: 'localhost',
-    user: 'root', // use your mysql username.
-    password: 'CWkeller1234!', // user your mysql password.
-    database: 'passwords'
+    user: process.env.USER_NAME,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE
 });
 
 pool.getConnection((err, connection) => {
