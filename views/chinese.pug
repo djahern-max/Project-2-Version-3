@@ -1,0 +1,23 @@
+extends layout
+
+mixin message(opp, name)
+    if(opp)
+        h1.greeting Logged in as 
+            span=name 
+    else 
+        h1.greeting Celtic Mythology
+
+append links 
+    li(style="float: right;")
+        a(href="/logout") logout 
+
+block content
+    .dashboard 
+        .user 
+            +message(opp, name)
+
+            p Chinese mythology (Chinese: 中國神話; pinyin: Zhōngguó shénhuà) is mythology that has been passed down in oral form or recorded in literature in the geographic area now known as "China". Chinese mythology includes many varied myths from regional and cultural traditions. Chinese mythology is far from monolithic, not being an integrated system, even among just Han people. Chinese mythology is encountered in the traditions of various classes of people, geographic regions, historical periods including the present, and from various ethnic groups. China is the home of many mythological traditions, including that of Han Chinese and their Huaxia predecessors, as well as Tibetan mythology, Turkic mythology, Korean mythology, and many others. However, the study of Chinese mythology tends to focus upon material in Chinese language.
+            br  
+            div 
+            - const myAttributes = {"src": "/img/yudi_chinese.jpg", "alt": "This is my photo"}
+        img&attributes(myAttributes)

@@ -1,0 +1,23 @@
+extends layout
+
+mixin message(opp, name)
+    if(opp)
+        h1.greeting Logged in as 
+            span=name 
+    else 
+        h1.greeting Japanese Mythology
+
+append links 
+    li(style="float: right;")
+        a(href="/logout") logout 
+
+block content
+    .dashboard 
+        .user 
+            +message(opp, name)
+
+            p Japanese mythology embraces Shinto and Buddhist traditions as well as agriculturally-based folk religion. The Shinto pantheon comprises innumerable kami (Japanese for "god(s)" or "spirits"). This article will discuss only the typical elements present in Asian mythology, such as cosmogony, important deities, and the best-known Japanese stories.  Japanese myths, as generally recognized in the mainstream today, are based on the Kojiki, the Nihon Shoki, and some complementary books. The Kojiki, or "Record of Ancient Matters", is the oldest surviving account of Japan's myths, legends and history. The Shintōshū describes the origins of Japanese deities from a Buddhist perspective, while the Hotsuma Tsutae records a substantially different version of the mythology.
+            br  
+            div 
+            - const myAttributes = {"src": "/img/Benzaiten.jpg", "alt": "This is my photo"}
+        img&attributes(myAttributes)

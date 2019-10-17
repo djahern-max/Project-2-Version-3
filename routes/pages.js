@@ -90,17 +90,34 @@ router.get('/logout', (req, res, next) => {
         });
     }
 });
-router.get("/greese", function (req, res) {
-    res.render("greese", {
-        name: "test"
-    });
+router.get("/greek", function (req, res) {
+    res.render("greek", {});
 });
 
-router.get("/test", function (req, res) {
-    res.render("test", {
-        name: "test"
-    });
+router.get("/celtic", function (req, res) {
+    res.render("celtic", {});
 });
+
+router.get("/chinese", function (req, res) {
+    res.render("chinese", {});
+});
+
+router.get("/egyptian", function (req, res) {
+    res.render("egyptian", {});
+});
+router.get("/norse", function (req, res) {
+    res.render("norse", {});
+});
+router.get("/roman", function (req, res) {
+    res.render("roman", {});
+});
+router.get("/japanese", function (req, res) {
+    res.render("japanese", {});
+});
+router.get("/aztec", function (req, res) {
+    res.render("aztec", {});
+});
+
 
 
 
