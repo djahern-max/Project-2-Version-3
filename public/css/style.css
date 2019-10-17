@@ -1,81 +1,88 @@
-* {padding: 0; margin: 0;}
+* {
+    padding: 0;
+    margin: 0;
+}
 
-body 
-{
+body {
     background-color: #F0F0F0;
 }
-.table, .table td, .table tr
-{
+
+.table,
+.table td,
+.table tr {
     border-collapse: collapse;
     border: 1px solid #ccc;
     padding: 10px;
 }
-.table
-{
+
+.table {
     background-color: #fff;
 }
-nav
-{
+
+nav {
     background-color: #fff;
     border: 1px solid #ccc;
     margin-bottom: 5px;
 }
-nav ul
-{
+
+nav ul {
     list-style: none;
 }
 
-nav ul li 
-{
+nav ul li {
     display: inline;
 }
-nav ul li a 
-{
+
+nav ul li a {
     display: inline-block;
     text-decoration: none;
     color: #444;
     padding: 8px 20px;
 }
-nav ul li a:hover
-{
+
+nav ul li a:hover {
     background-color: #F0F0F0;
 }
-.page-wrapper
-{
+
+.page-wrapper {
     width: 960px;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.login-panel, .register-panel
-{
+.login-panel,
+.register-panel {
     padding: 20px 20px 50px 20px;
     border: 1px solid #ccc;
     background-color: #fff;
 }
-.login-panel
-{
+
+.login-panel {
     float: left;
 }
-.register-panel
-{
+
+.register-panel {
     float: right;
 }
-.image, .join-us-img
-{
+
+.image,
+.join-us-img {
     display: block;
     margin: 0 auto;
+
 }
-.image
-{
+
+.image {
     margin-bottom: 20px;
+
 }
-.join-us-img
-{    
-    width: 90%;   
+
+.join-us-img {
+    width: 90%;
 }
-input[type="text"], input[type="password"]
-{
+
+input[type="text"],
+input[type="password"] {
     padding: 8px 5px;
     margin: 0 0 5px 5px;
     min-width: 270px;
@@ -83,8 +90,8 @@ input[type="text"], input[type="password"]
     background-color: #F5F5F5;
     border: 1px solid #ccc;
 }
-input[type="submit"]
-{
+
+input[type="submit"] {
     float: right;
     padding: 7px 20px;
     font-size: 1.06em;
@@ -94,68 +101,75 @@ input[type="submit"]
     cursor: pointer;
     margin-top: 4px;
 }
-input[type="text"]:focus , input[type="password"]:focus {
-    background-color:#fff;
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #fff;
 }
-input[type="submit"]:hover
-{
+
+input[type="submit"]:hover {
     background-color: #0fa3dd;
     border-color: 1px solid #098ec2;
 }
-.error
-{
+
+.error {
     background-color: rgb(248, 203, 203);
     border: 1px solid rgb(245, 87, 87);
     color: rgb(245, 49, 49);
     padding: 10px 15px;
 }
 
-.dashboard
-{
+.dashboard {
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #fff;
 }
 
-.user-post-area
-{
+.user-post-area {
     padding: 20px 0;
 }
-form
-{
+
+form {
     overflow: hidden;
     margin-bottom: 10px;
 }
-textarea
-{
+
+textarea {
     box-sizing: border-box;
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     font-size: 18px;
     padding: 10px;
-    resize: vertical;   
+    resize: vertical;
 }
 
-.post 
-{
+.post {
     padding: 20px;
     border: 1px solid #bbb;
     color: #888;
     margin-bottom: 5px;
 }
-p 
-{
+
+p {
     padding: 10px;
 }
-.greeting
-{
+
+.greeting {
     color: #222;
     background-color: rgb(245, 255, 245);
     border: 1px solid rgb(210, 231, 210);
     padding: 1em;
 }
-.greeting span
-{
+
+.greeting span {
     color: rgb(112, 172, 16);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 44px
 }
