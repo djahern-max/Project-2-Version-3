@@ -13,12 +13,12 @@ append links
     li(style="float: right;")
         a(href="/logout") logout 
 
-append links 
-    li(style="float: right;")
-        a(href="/greese") greese 
-
 block content
     .dashboard 
         .user 
             +message(opp, name)
 
+            footer
+
+                a(class='button' href='/greese') Greese
+                a(class='button' href='/test') test

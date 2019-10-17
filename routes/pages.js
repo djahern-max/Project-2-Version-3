@@ -93,7 +93,12 @@ router.get('/logout', (req, res, next) => {
 router.get("/greese", function (req, res) {
     res.render("greese", {
         name: "test"
+    });
+});
 
+router.get("/test", function (req, res) {
+    res.render("test", {
+        name: "test"
     });
 });
 
