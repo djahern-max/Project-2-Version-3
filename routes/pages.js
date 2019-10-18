@@ -1,6 +1,7 @@
 const express = require('express');
 const User = require('../core/user');
 const router = express.Router();
+var path = require("path");
 
 // create an object from the class User in the file core/user.js
 const user = new User();
@@ -129,6 +130,12 @@ router.get("/final_exam", function (req, res) {
 router.get("/Quiz", function (req, res) {
     res.render("Quiz", {});
 });
+// router.get("/Quiz1", function (req, res) {
+//     res.sendFile("Quiz1", {});
+// });
 
+router.use(function (req, res) {
+    res.sendFile(path.join(__dirname + "/../views/Quiz1.html"));
+});
 
 module.exports = router;
