@@ -126,5 +126,9 @@ router.get("/quiz", function (req, res) {
 router.get("/final_exam", function (req, res) {
     res.render("final_exam", {});
 });
+router.get("/Quiz", function (req, res) {
+    res.render("Quiz", {});
+});
+
 
 module.exports = router;
