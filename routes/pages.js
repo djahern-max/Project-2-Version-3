@@ -123,5 +123,8 @@ router.get("/button", function (req, res) {
 router.get("/quiz", function (req, res) {
     res.render("Quiz", {});
 });
+router.get("/final_exam", function (req, res) {
+    res.render("final_exam", {});
+});
 
 module.exports = router;
