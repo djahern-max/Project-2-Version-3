@@ -1,9 +1,3 @@
-// var pug = require("pug");
-
-// // Template engine. PUG
-// app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'pug');
-
 function populate() {
     if (quiz.isEnded()) {
         // showScores();

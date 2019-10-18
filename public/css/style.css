@@ -339,9 +339,7 @@ p.colors a {
     text-align: center;
 }
 
-#quizTop {
-    margin-top: 50px;
-}
+
 
 .grid {
     width: 600px;
@@ -356,22 +354,29 @@ p.colors a {
 
 }
 
-#quiz {
+.grid h1 {
     font-family: sans-serif;
     background-color: #57636e;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     color: #fff;
     padding: 2px 0px;
     border-radius: 50px;
 }
 
-#question {
+.grid #question {
     font-family: sans-serif;
     font-size: 30px;
     color: #5a6772;
 
 }
+
+.grid #question {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #5a6772;
+}
+
 
 .buttons {
     margin-top: 30px
@@ -385,7 +390,7 @@ p.colors a {
     width: 250px;
     font-size: 20px;
     color: #fff;
-    border: 1px solid #1d3c;
+    border: 1px solid #1d3c6a;
     border-radius: 50px;
     margin: 10px 40px 10px 0px;
     padding: 10px 10px;
