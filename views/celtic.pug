@@ -3,9 +3,10 @@ extends layout
 mixin message(opp, name)
     if(opp)
         h1.greeting Logged in as 
-            span=name 
+            span=name
     else 
         h1.greeting Celtic Mythology
+            a.button_nav(href="/chinese") Proceed to Module # 3 
 
 append links 
     li(style="float: right;")

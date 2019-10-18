@@ -4,6 +4,7 @@ mixin message(opp, name)
     if(opp)
         h1.greeting Logged in as 
             span=name 
+            a.button_nav(href="/greek") Enter Module # 1
     else 
         h1.greeting Welcome 
             span=name 
@@ -20,9 +21,7 @@ block content
 
             br
             br
-            h4 Welcome to Mythendium!  Test your knowledge of gods and goddesses of the Mythologies above and see if you can guess the gods displayed!
-            br  
+            h3.text_center Welcome to Mythendium!  Please proceed through the modules and complete examination at the end.
+            br
+            br
             img.center(src="/img/MythendiumLogo_1_70.jpg", alt="Mythendium Logo") 
-
-        //-     - const myAttributes = {"src": "/img/MythendiumLogo_1_70.jpg", "alt": "This is my photo"}
-        //- img&attributes(myAttributes)

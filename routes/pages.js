@@ -117,5 +117,11 @@ router.get("/japanese", function (req, res) {
 router.get("/aztec", function (req, res) {
     res.render("aztec", {});
 });
+router.get("/button", function (req, res) {
+    res.render("Button_Test", {});
+});
+router.get("/quiz", function (req, res) {
+    res.render("Quiz", {});
+});
 
 module.exports = router;
