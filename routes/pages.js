@@ -135,7 +135,7 @@ router.get("/Quiz", function (req, res) {
 // });
 
 router.use(function (req, res) {
-    res.sendFile(path.join(__dirname + "/../views/Quiz1.html"));
+    res.sendFile(path.join(__dirname + "../../QUIZ/Quiz1.html"));
 });
 
 module.exports = router;

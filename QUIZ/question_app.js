@@ -35,18 +35,18 @@ function showProgress() {
 
 function showScores() {
     var gameOverHTML = "<h1>Result</h1>";
-    gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
+    gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "\n" + "out of 5" + "</h2 > ";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
 };
 
 // create questions
 var questions = [
-    new Question("Which one is not an object oriented programming language?", ["Java", "C#", "C++", "C"], "C"),
-    new Question("Which language is used for styling web pages?", ["HTML", "JQuery", "CSS", "XML"], "CSS"),
-    new Question("There are ____ main components of object oriented programming.", ["1", "6", "2", "4"], "4"),
-    new Question("Which language is used for web apps?", ["PHP", "Python", "Javascript", "All"], "All"),
-    new Question("MVC is a ____.", ["Language", "Library", "Framework", "All"], "Framework")
+    new Question("Which god is credited with being the co-creator of the world?", ["Benzaiten", "Neptune", "Osiris", "Tezcatlipoca"], "Tezcatlipoca"),
+    new Question("Which god is a primordal Norse man, son of Buri?", ["Neptune", "Benzaiten", "Ana or Danu/Dana", "Bor"], "Bor"),
+    new Question("Which got fatherd Aphrodite?", ["Zeus", "Yudi", "Osiris", "Benzaiten"], "Zeus"),
+    new Question("Which god rode a horse or a dolphin and ruled the sea?", ["Tezcatlipoca", "Benzaiten", "Bor", "Neptune"], "Neptune"),
+    new Question("Which god isthe only female among Japan’s “Seven Gods of Fortune", ["Bor", "Benzaiten", "Yudi", "Ana or Danu/Dana"], "Benzaiten")
 ];
 
 // create quiz
@@ -54,3 +54,6 @@ var quiz = new Quiz(questions);
 
 // display quiz
 populate();
+
+
+console.log("test");

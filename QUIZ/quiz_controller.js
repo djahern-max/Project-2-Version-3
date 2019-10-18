@@ -19,3 +19,5 @@ Quiz.prototype.guess = function (answer) {
 Quiz.prototype.isEnded = function () {
     return this.questionIndex === this.questions.length;
 }
+
+console.log("test")
