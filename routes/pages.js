@@ -118,8 +118,4 @@ router.get("/aztec", function (req, res) {
     res.render("aztec", {});
 });
 
-
-
-
-
 module.exports = router;

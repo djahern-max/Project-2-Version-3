@@ -123,6 +123,7 @@ input[type="submit"]:hover {
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #fff;
+
 }
 
 .user-post-area {
@@ -172,4 +173,12 @@ p {
     margin-right: auto;
     width: 50%;
     padding: 44px
+}
+
+.box {
+    display: inlineblock
+}
+
+.text {
+    font-weight: bold;
 }
