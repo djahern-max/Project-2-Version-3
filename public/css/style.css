@@ -32,7 +32,7 @@ nav {
     border: 1px solid #ccc;
     margin-bottom: 5px;
     border-radius: 25px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 nav ul {
@@ -67,7 +67,7 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 25px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .login-panel {
@@ -141,7 +141,7 @@ input[type="submit"]:hover {
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 25px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .user-post-area {
