@@ -2,23 +2,30 @@ const util = require('util');
 const mysql = require('mysql');
 require("dotenv").config();
 
-const pool = mysql.createPool({
-    connectionLimit: 10,
-    host: 'localhost',
-    user: process.env.USER_NAME,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE
-});
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
 
-pool.getConnection((err, connection) => {
-    if (err)
-        console.error("Something went wrong connecting to the database ...");
+    const pool = mysql.createPool({
+        connectionLimit: 10,
+        host: 'localhost',
+        user: process.env.USER_NAME,
+        password: process.env.PASSWORD,
+        database: process.env.DATABASE
+    });
 
-    if (connection)
-        connection.release();
-    return;
-});
 
-pool.query = util.promisify(pool.query);
+    pool.getConnection((err, connection) => {
+        if (err)
+            console.error("Something went wrong connecting to the database ...");
 
-module.exports = pool;
+        if (connection)
+            connection.release();
+        return;
+    });
+
+    pool.query = util.promisify(pool.query);
+
+    module.exports = pool;
+
+}
