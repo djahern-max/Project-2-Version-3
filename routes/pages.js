@@ -122,20 +122,20 @@ router.get("/aztec", function (req, res) {
 router.get("/button", function (req, res) {
     res.render("Button_Test", {});
 });
-router.get("/quiz", function (req, res) {
-    res.render("Quiz", {});
-});
+// router.get("/quiz", function (req, res) {
+//     res.render("Quiz", {});
+// });
 router.get("/final_exam", function (req, res) {
     res.render("final_exam", {});
 });
-router.get("/Quiz", function (req, res) {
-    res.render("Quiz", {});
-});
+// router.get("/Quiz", function (req, res) {
+//     res.render("Quiz", {});
+// });
 // router.get("/Quiz1", function (req, res) {
 //     res.sendFile("Quiz1", {});
 // });
 
-router.use(function (req, res) {
+router.use("/quiz", function (req, res) {
     res.sendFile(path.join(__dirname + "../../QUIZ/Quiz1.html"));
 });
 
