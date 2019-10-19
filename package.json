@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
   },
   "keywords": [],
   "author": "",
@@ -12,12 +13,13 @@
   "dependencies": {
     "bcrypt": "^3.0.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.16.4",
     "express-session": "^1.15.6",
     "mysql": "^2.16.0",
     "pug": "^2.0.3",
     "util.promisify": "^1.0.0"
   },
   "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }
