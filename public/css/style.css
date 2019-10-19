@@ -32,7 +32,7 @@ nav {
     border: 1px solid #ccc;
     margin-bottom: 5px;
     border-radius: 25px;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 nav ul {
@@ -67,7 +67,7 @@ nav ul li a:hover {
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 25px;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .login-panel {
@@ -141,7 +141,7 @@ input[type="submit"]:hover {
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 25px;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .user-post-area {
@@ -185,7 +185,7 @@ p {
 }
 
 .greeting span {
-    color: rgb(112, 172, 16);
+    color: #0285b9;
 }
 
 .centerZues {
@@ -248,10 +248,10 @@ p {
 
 .btn1:hover,
 .btn2:hover {
-    color: rgb(212, 27, 27);
+    color: black;
     background-color:
-        #09bcc2;
-        border-radius: 25px;
+    #0285b9;
+    border-radius: 25px;
 
 }
 
@@ -342,19 +342,18 @@ p.colors a {
 
 .button_nav {
     text-decoration: none;
-    border: 4px outset #090;
+    border: 4px outset #0285b9;
     padding: 5px 12px;
     background-color: rgb(252, 252, 253);
     font-weight: bold;
-    color: rgb(204, 6, 6);
+    color: black;
     float: right;
     font-size: 20px;
     border-radius: 25px;
-
 }
 
 .button_nav:hover {
-    background-color: rgb(109, 165, 202);
+    background-color: rgb(245, 255, 245);
     position: relative;
     top: 2px
 }
