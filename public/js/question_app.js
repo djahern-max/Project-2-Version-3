@@ -46,7 +46,7 @@ var questions = [
     new Question("Which god is a primordal Norse man, son of Buri?", ["Neptune", "Benzaiten", "Ana or Danu/Dana", "Bor"], "Bor"),
     new Question("Which got fatherd Aphrodite?", ["Zeus", "Yudi", "Osiris", "Benzaiten"], "Zeus"),
     new Question("Which god rode a horse or a dolphin and ruled the sea?", ["Tezcatlipoca", "Benzaiten", "Bor", "Neptune"], "Neptune"),
-    new Question("Which god isthe only female among Japan’s “Seven Gods of Fortune", ["Bor", "Benzaiten", "Yudi", "Ana or Danu/Dana"], "Benzaiten")
+    new Question("Which god is the only female among Japan’s “Seven Gods of Fortune", ["Bor", "Benzaiten", "Yudi", "Ana or Danu/Dana"], "Benzaiten")
 ];
 
 // create quiz

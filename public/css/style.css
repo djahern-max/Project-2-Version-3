@@ -3,9 +3,13 @@
     margin: 0;
 }
 
+
 body {
-    background-color: #F0F0F0;
+    background: url(../img/HTMLmythBackground1.jpg);
+    background-size: auto;
+
 }
+
 
 .table,
 .table td,
@@ -23,6 +27,8 @@ nav {
     background-color: #fff;
     border: 1px solid #ccc;
     margin-bottom: 5px;
+    border-radius: 25px;
+    opacity: 1.0;
 }
 
 nav ul {
@@ -42,6 +48,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #F0F0F0;
+    border-radius: 25px;
 }
 
 .page-wrapper {
@@ -55,6 +62,8 @@ nav ul li a:hover {
     padding: 20px 20px 50px 20px;
     border: 1px solid #ccc;
     background-color: #fff;
+    border-radius: 25px;
+    opacity: 1.0;
 }
 
 .login-panel {
@@ -89,27 +98,31 @@ input[type="password"] {
     font-size: 1.05em;
     background-color: #F5F5F5;
     border: 1px solid #ccc;
+    border-radius: 25px;
 }
 
 input[type="submit"] {
     float: right;
     padding: 7px 20px;
     font-size: 1.06em;
-    background-color: #0796cf;
-    color: #fff;
+    background-color: #F5F5F5;
+    color: black;
     border: 1px solid #0285b9;
     cursor: pointer;
     margin-top: 4px;
+    border-radius: 25px;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus {
     background-color: #fff;
+    border-radius: 25px;
 }
 
 input[type="submit"]:hover {
     background-color: #0fa3dd;
     border-color: 1px solid #098ec2;
+    border-radius: 25px;
 }
 
 .error {
@@ -123,7 +136,8 @@ input[type="submit"]:hover {
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #fff;
-
+    border-radius: 25px;
+    opacity: 1.0;
 }
 
 .user-post-area {
@@ -143,6 +157,7 @@ textarea {
     font-size: 18px;
     padding: 10px;
     resize: vertical;
+    border-radius: 25px;
 }
 
 .post {
@@ -150,6 +165,7 @@ textarea {
     border: 1px solid #bbb;
     color: #888;
     margin-bottom: 5px;
+    border-radius: 25px;
 }
 
 p {
@@ -161,10 +177,11 @@ p {
     background-color: rgb(245, 255, 245);
     border: 1px solid rgb(210, 231, 210);
     padding: 1em;
+    border-radius: 25px;
 }
 
 .greeting span {
-    color: rgb(112, 172, 16);
+    color: #0285b9;
 }
 
 .centerZues {
@@ -209,6 +226,7 @@ p {
     transition: 0.8s;
     position: relative;
     overflow: hidden;
+
 }
 
 .btn1,
@@ -226,9 +244,10 @@ p {
 
 .btn1:hover,
 .btn2:hover {
-    color: rgb(212, 27, 27);
+    color: black;
     background-color:
-        #09bcc2;
+        #0285b9;
+    border-radius: 25px;
 
 }
 
@@ -319,18 +338,18 @@ p.colors a {
 
 .button_nav {
     text-decoration: none;
-    border: 4px outset #090;
+    border: 4px outset #0285b9;
     padding: 5px 12px;
     background-color: rgb(252, 252, 253);
     font-weight: bold;
-    color: rgb(204, 6, 6);
+    color: black;
     float: right;
     font-size: 20px;
-
+    border-radius: 25px;
 }
 
 .button_nav:hover {
-    background-color: rgb(109, 165, 202);
+    background-color: rgb(245, 255, 245);
     position: relative;
     top: 2px
 }
