@@ -16,7 +16,7 @@ router.get('/', (req, res, next) => {
     }
     // IF not we just send the index page.
     res.render('index', {
-        title: "My application"
+        title: "Mythendium"
     });
 })
 
